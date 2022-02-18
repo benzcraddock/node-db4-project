@@ -27,7 +27,5 @@ module.exports = {
       filename: './data/cook_book.test.db3'
     }
   },
-  production: {
-
-  }
+  production: {}
 }
