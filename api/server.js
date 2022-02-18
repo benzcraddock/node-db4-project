@@ -8,4 +8,11 @@ server.use(helmet())
 server.use(express.json())
 server.use('/api/recipes', recipesRouter)
 
+// http :9000
+server.use('*', (req, res) => {
+  res.json({
+    api: 'up'
+  })
+})
+
 module.exports = server
